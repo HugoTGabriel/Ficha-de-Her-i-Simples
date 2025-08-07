@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Herói</title>
+</head>
+<body>
+    <script>
+        let nome = prompt('Digite o nome do seu Herói: ');
+        let xp = parseInt(prompt('Digite a quantidade de XP que seu Herói possui: '));
+
+        let nivel = "";
+        let i = 0;
+        
+        let nNiveis = ["Ferro", "Bronze", "Prata", "Ouro", "Platina", "Ascendente", "Imortal", "Radiante"];
+        let limites = [1000,   2000,   5000,   7000,    8000,      9000,      10000,   Infinity];
+
+        while (xp > limites[i]) {
+            i++;
+        }
+
+        nivel = nNiveis[i];
+
+        alert(`O Herói de nome ${nome} está no nível de ${nivel}`);
+    </script>
+</body>
+</html>
